@@ -111,3 +111,31 @@ section#about p {
     font-size: 1rem;
     color: #555;
 }
+
+.bio-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.bio-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.bio-list li::before {
+    content: '•';
+    margin-right: 8px;
+    color: #ff6347; /* Change la couleur du point si tu veux */
+    font-size: 1.5rem;
+}
+
+.bio-list li::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+}
+
