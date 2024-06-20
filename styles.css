@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #FF3737;
+    background-color: #FFFFFF
 }
 
 .container {
@@ -81,7 +81,7 @@ body {
 }
 
 .btn {
-    background-color: #FF3737;
+    background-color: #FFFFF;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -109,7 +109,7 @@ section#about h2 {
 
 section#about p {
     font-size: 1rem;
-    color: #555;
+    color: #FF3737;
 }
 
 .bio-list {
