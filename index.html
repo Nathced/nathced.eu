@@ -23,14 +23,6 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        input[type="password"] {
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            margin-bottom: 10px;
-            width: 100%;
-            box-sizing: border-box;
-        }
         button {
             padding: 10px 20px;
             background-color: #7dd1d1;
@@ -42,17 +34,12 @@
         button:hover {
             background-color: #49b0b0;
         }
-        .hidden {
-            display: none;
-        }
     </style>
 </head>
 <body>
-    <div class="container" id="password-container">
+    <div class="container">
         <h1>Bienvenue sur mon site personnel</h1>
-        <input type="password" id="password" placeholder="Entrez le mot de passe">
-        <button onclick="checkPassword()">Valider</button>
-        <p id="error-message" style="color: red; display: none;">Mot de passe incorrect</p>
+        <button onclick="showOptions()">Accéder au site</button>
     </div>
 
     <div class="container hidden" id="content-container">
@@ -62,20 +49,9 @@
     </div>
 
     <script>
-        const correctPassword = 'nathced';
-        const passwordContainer = document.getElementById('password-container');
-        const contentContainer = document.getElementById('content-container');
-        const errorMessage = document.getElementById('error-message');
-
-        function checkPassword() {
-            const password = document.getElementById('password').value;
-            if (password === correctPassword) {
-                passwordContainer.classList.add('hidden');
-                contentContainer.classList.remove('hidden');
-                errorMessage.style.display = 'none';
-            } else {
-                errorMessage.style.display = 'block';
-            }
+        function showOptions() {
+            document.querySelector('.container').classList.add('hidden');
+            document.getElementById('content-container').classList.remove('hidden');
         }
     </script>
 </body>
