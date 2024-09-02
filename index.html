@@ -3,61 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Personnel de Nathaël</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #cbfcfc;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
-        }
-        .container {
-            text-align: center;
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-        }
-        button {
-            padding: 10px 20px;
-            background-color: #7dd1d1;
-            border: none;
-            border-radius: 4px;
-            color: white;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #49b0b0;
-        }
-        .hidden {
-            display: none;
-        }
-    </style>
+    <title>Site en Maintenance</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container" id="welcome-container">
-        <h1>Bienvenue sur mon site personnel</h1>
-        <button onclick="showOptions()">Accéder au site</button>
+    <div class="container">
+        <h1 id="animated-text"></h1>
     </div>
-
-    <div class="container hidden" id="content-container">
-        <h1>Choisissez une option</h1>
-        <button onclick="window.location.href='about.html'">À propos de moi</button>
-        <button onclick="window.location.href='projects.html'">Mes projets</button>
-    </div>
-
-    <script>
-        function showOptions() {
-            document.getElementById('welcome-container').classList.add('hidden');
-            document.getElementById('content-container').classList.remove('hidden');
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
