@@ -5,8 +5,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #282c34;
-    color: white;
+    background-color: #000; /* Fond noir */
+    color: white; /* Texte blanc */
     font-family: 'Arial', sans-serif;
 }
 
@@ -16,4 +16,11 @@ body {
 
 h1 {
     font-size: 2.5em;
+}
+
+#animated-text {
+    background-color: yellow; /* Couleur de surlignage */
+    color: black; /* Couleur du texte surligné */
+    padding: 0 5px; /* Espace autour du texte surligné */
+    border-radius: 4px; /* Coins arrondis pour le surlignage */
 }
