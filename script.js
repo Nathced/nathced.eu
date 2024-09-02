@@ -1,5 +1,5 @@
 const textElement = document.getElementById('animated-text');
-const messages = ['maintenance', 'en cours de construction', 'développement'];
+const messages = ['maintenance', 'cours de construction', 'développement'];
 let currentMessageIndex = 0;
 let currentText = '';
 let isDeleting = false;
