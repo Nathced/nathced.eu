@@ -19,7 +19,7 @@ h1 {
 }
 
 #animated-text {
-    background-color: yellow; /* Couleur de surlignage */
+    background-color: red; /* Couleur de surlignage */
     color: black; /* Couleur du texte surligné */
     padding: 0 5px; /* Espace autour du texte surligné */
     border-radius: 4px; /* Coins arrondis pour le surlignage */
